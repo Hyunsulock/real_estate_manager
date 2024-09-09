@@ -1,7 +1,8 @@
 {
   "expo": {
     "name": "real_estate_manager",
-    "slug": "real_estate_manager",
+    "slug": "real-esate-manager",
+    "scheme": "your-app-scheme",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -22,6 +23,29 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "tsconfigPaths": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "23a20b68-d6d1-4cf5-bc4f-e357ae9df44a"
+      }
+    },
+    "owner": "injesus68",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/23a20b68-d6d1-4cf5-bc4f-e357ae9df44a"
     }
   }
 }
